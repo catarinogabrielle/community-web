@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image';
+import Head from '../../node_modules/next/head'
+import Image from '../../node_modules/next/image';
 import styles from '../../styles/home.module.scss';
 
 import logoImg from '../../public/logo.png';
@@ -7,15 +7,17 @@ import logoImg from '../../public/logo.png';
 import { Input } from '../components/ui/Input'
 import { Button } from '../components/ui/Button'
 
+import Link from '../../node_modules/next/link';
+
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Community - Faça seu login</title>
+        <title>The.Doctors - Faça seu login</title>
       </Head>
 
       <div className={styles.containerCenter}>
-        <Image src={logoImg} alt="logo community" />
+        <Image width="350" height="90" src={logoImg} alt="logo community" />
 
         <div className={styles.login}>
           <form>
@@ -36,6 +38,10 @@ export default function Home() {
               Acessar
             </Button>
           </form>
+
+          <Link href="/signup">
+            <a className={styles.text}>Não possui uma conta? Cadastre-se</a>
+          </Link>
         </div>
       </div>
     </>
