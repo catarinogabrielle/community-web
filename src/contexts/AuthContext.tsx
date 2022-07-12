@@ -2,8 +2,8 @@ import { createContext, ReactNode, useState } from 'react'
 
 import { api } from '../services/apiClient'
 
-import { destroyCookie, setCookie, parseCookies } from '../../node_modules/nookies/dist/index'
-import Router from '../../node_modules/next/router'
+import { destroyCookie, setCookie, parseCookies } from 'nookies'
+import Router from 'next/router'
 
 import { toast } from 'react-toastify'
 

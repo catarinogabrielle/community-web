@@ -1,5 +1,5 @@
-import axios, { AxiosError } from '../../node_modules/axios/index'
-import { parseCookies } from '../../node_modules/nookies/dist/index'
+import axios, { AxiosError } from 'axios'
+import { parseCookies } from 'nookies'
 import { AuthTokenError } from './errors/AuthTokenError'
 
 import { signOut } from '../contexts/AuthContext'
